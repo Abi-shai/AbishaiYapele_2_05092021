@@ -390,59 +390,6 @@ footer div ul li{
   padding-top: .5em;
 }
 
-@media all and (min-width: 480px) and (max-width: 1023px) {
-
-  .ligne{
-    visibility: hidden;
-  }
-  
-  .texte_apresmenu{
-    margin-left: 2em;
-    margin-top: 1.8em;
-    margin-right: 2em;
-    display: block;
-    white-space: wrap;
-  
-  
-  }
-  .texte_apresmenu strong{
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-
-  form{
-    margin: 1em 2em;
-    max-width: 28em;
-  }
-  
-
-  .search-button{
-    background-color: #0065fc;
-    color: white;
-    padding: 1em;
-    font-size: .9em;
-    font-weight: 600;
-    border-style: none;
-    border-radius: 0px 10px 10px 0px;
-  }
-  
-  .fa-search{
-    visibility: hidden;
-  }
-  
-  form input{
-    height: 2.2;
-    width: 40%;
-    padding-left: 1rem;
-    color: black;
-    font-weight: bolder;
-    border: 1px solid #f2f2f2;
-    border-right: 0px;
-    border-left: 0px;
-  
-  }
-}
-
 @media all and (min-width: 1024px){
 
 
@@ -695,8 +642,14 @@ footer div ul li{
 
 }
 
+@media screen and (max-width: 1023px) and (orientation: landscape){
+  form button{
+    display: none;
+  }
+}
 
-@media all and (max-device-width: 480px){
+
+@media all and (max-device-width: 480px) and (max-device-width: 1023px){
   header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
