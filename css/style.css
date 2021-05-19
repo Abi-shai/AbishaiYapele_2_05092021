@@ -74,6 +74,10 @@
   color: #0065fc;
 }
 
+.grey-star{
+  color: #d8d8d8;
+}
+
 /*Mon code commence ici*/
 
 
@@ -390,6 +394,8 @@ footer div ul li{
   padding-top: .5em;
 }
 
+/*quelques parametres pour la version desktop*/
+
 @media all and (min-width: 1024px){
 
 
@@ -642,6 +648,8 @@ footer div ul li{
 
 }
 
+/*quelques parametres pour la version tablette*/
+
 @media screen and (min-width: 481px) and (max-width: 1023px){
   form button{
     display: none;
@@ -653,6 +661,7 @@ footer div ul li{
   
 }
 
+/*quelques parametres pour la version mobile*/
 
 @media all and (max-device-width: 480px){
   header {
