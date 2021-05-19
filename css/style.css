@@ -642,14 +642,19 @@ footer div ul li{
 
 }
 
-@media screen and (max-width: 1023px) and (orientation: landscape){
+@media screen and (min-width: 481px) and (max-width: 1023px){
   form button{
     display: none;
   }
+
+  header nav a {
+    color: #0065fc;
+  }
+  
 }
 
 
-@media all and (max-device-width: 480px) and (max-device-width: 1023px){
+@media all and (max-device-width: 480px){
   header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
