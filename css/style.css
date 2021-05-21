@@ -396,7 +396,7 @@ footer div ul li{
 
 /*quelques parametres pour la version desktop*/
 
-@media all and (min-width: 1024px){
+@media all and (min-width: 1431px){
 
 
   header {
@@ -488,7 +488,8 @@ footer div ul li{
   
 
   main{
-    margin: 0 2em;
+    width: calc(100% - 4em);
+    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
     gap: 3em;
@@ -564,7 +565,8 @@ footer div ul li{
 
 
   section{
-    margin: 0 2em;
+    width: calc(100% - 4em);
+    margin: 0 auto;
     padding-top: 2em;
   }
 
@@ -577,9 +579,9 @@ footer div ul li{
 
   .activites_marseille{
     margin: 0;
-    width: 94.5%;
+    width: 100%;
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: auto;
     grid-template-areas:   
         "a1 a2 a4 a5"
         "a1 a3 a4 a6";
@@ -645,6 +647,136 @@ footer div ul li{
     padding-top: .5em;
   }
 
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1430px) {
+
+  .fa-search{
+    visibility: hidden;
+  }
+
+  form button{
+    background-color: #0065fc;
+    color: white;
+    padding: 1em;
+    font-size: .9em;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+
+
+  main{
+    width: calc(100% - 4em);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3em;
+  }
+  .main-2{
+    flex: 0 0 65%;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+  }
+
+  .article-2{
+    width: calc(100% - 2em);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 2em;
+    grid-column-gap: 2em;
+  }
+
+  .main-1{
+    border-radius: 15px;
+  }
+
+  .plus_populaires{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 2em;
+  }
+
+  .article-1{
+    width: calc(100% - 2em);
+    margin: 0 auto;
+  }
+
+
+  .plus_populaires img{
+    height: 10em;
+  }
+
+  .details{
+    margin-top: 1.3em;
+    font-size: clamp(.55em, .77em, 2em);
+    padding: auto;
+  }
+
+  .stars-1{
+
+  }
+
+  
+  section{
+    width: calc(100% - 4em);
+    margin: 0 auto;
+    padding-top: 2em;
+  }
+
+  .description_activite_marseille{
+    margin-left: 0;
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: 900;
+  }
+
+  .activites_marseille{
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:   
+        "a1 a2 a4 a5"
+        "a1 a3 a4 a6";
+    gap: 2em;
+    padding-bottom: 3em;
+  }
+
+  .a1{
+    grid-area: a1;
+  }
+
+  .a1 img{
+    height: 90%;
+  }
+
+
+  .a2{
+    grid-area: a2;
+  }a4
+  .a3{
+    grid-area: a3;
+  }
+  .a4{
+    grid-area: a4;
+  }
+
+  .a4 img{
+    height: 90%;
+  }
+
+
+  .a5{
+    grid-area: a5;
+  }
+
+  .a6{
+    grid-area: a6;
+  }
+  
 
 }
 
