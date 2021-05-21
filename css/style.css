@@ -394,7 +394,7 @@ footer div ul li{
   padding-top: .5em;
 }
 
-/*quelques parametres pour la version desktop*/
+/*quelques parametres pour la version Desktop*/
 
 @media all and (min-width: 1431px){
 
@@ -650,6 +650,8 @@ footer div ul li{
 
 }
 
+/*Version Laptop*/
+
 @media screen and (min-width: 1024px) and (max-width: 1430px) {
 
   .fa-search{
@@ -713,10 +715,6 @@ footer div ul li{
     margin-top: 1.3em;
     font-size: clamp(.55em, .77em, 2em);
     padding: auto;
-  }
-
-  .stars-1{
-
   }
 
   
