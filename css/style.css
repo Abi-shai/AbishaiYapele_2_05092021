@@ -414,6 +414,17 @@ footer div ul li{
     border-top: 3px solid #0065fc;
     color: #0065fc;
   }
+
+  #sinscrire{
+    align-self: auto;
+    padding-top: 2.9em;
+  }
+
+  #sinscrire:hover{
+    margin-top: ;
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+  }
   
   
   .texte_apresmenu{
@@ -653,6 +664,27 @@ footer div ul li{
 /*Version Laptop*/
 
 @media screen and (min-width: 1024px) and (max-width: 1430px) {
+
+  header nav a{
+    text-decoration-line: none;
+    color:black;
+  }
+
+  header nav a:hover{
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+  }
+
+  #sinscrire{
+    align-self: auto;
+    padding-top: 2.9em;
+  }
+
+  #sinscrire:hover{
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+  }
+  
 
   .fa-search{
     visibility: hidden;
