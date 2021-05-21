@@ -72,6 +72,7 @@
 
 .fa-star{
   color: #0065fc;
+  width: 13px;
 }
 
 .grey-star{
@@ -421,7 +422,6 @@ footer div ul li{
   }
 
   #sinscrire:hover{
-    margin-top: ;
     border-top: 3px solid #0065fc;
     color: #0065fc;
   }
