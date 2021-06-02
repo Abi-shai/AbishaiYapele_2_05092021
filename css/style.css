@@ -5,7 +5,13 @@
   font-family: 'Raleway', sans-serif;
 }
 
+
+
 /*J'ai regrouper les icons en haut de page en un seul lieu*/
+
+.img_ajust {
+  height: 10em;
+}
 
 .fa-money-bill-wave {
   color: #0065fc;
@@ -67,6 +73,9 @@
 
 .fa-info {
   color: #0065fc;
+  border: 2px solid #e9e9e9;
+  padding: .2em .5em;
+  border-radius: 50%;
   margin-right: .8rem;
 }
 
@@ -77,6 +86,10 @@
 
 .grey-star {
   color: #d8d8d8;
+}
+
+.grey{
+  color: #e4e4e4;
 }
 
 /*Mon code commence ici*/
@@ -104,7 +117,7 @@ header nav {
 header nav a {
   text-decoration-line: none;
   color: black;
-  border-top: 3px solid transparent;
+  border-top: 3px solid rgb(201, 201, 201);
 }
 
 
@@ -120,7 +133,7 @@ header nav a {
   color: #0065fc;
   font-weight: bolder;
   text-decoration-line: none;
-  border-top: 3px solid transparent;
+  border-top: 3px solid rgb(201, 201, 201);;
 
 }
 
@@ -247,14 +260,16 @@ form input {
 }
 
 .article-1 figure img {
+  width: 40%;
   float: left;
   border-radius: 7px 0px 0px 7px;
   object-fit: cover;
 }
 
-
 .details {
-  padding-left: 10rem;
+  float: right;
+  width: 55%;
+  /*padding-left: 10rem;*/
   margin-top: .6rem;
 }
 
@@ -299,6 +314,7 @@ form input {
 
 .flex-2 img {
   width: 100%;
+  height: 10em;
   border-radius: .8em .8em 0 0;
   object-fit: cover;
 }
@@ -532,24 +548,22 @@ footer div ul li {
   }
 
   .article-1 {
-    margin-left: 1.1em;
+    width: calc(100% - 3em);
     cursor: pointer;
     background-color: white;
     border-radius: 13px;
-    width: 90%;
+    margin: 0 auto;
   }
 
   .article-1 figure img {
-    height: 10.3em;
-    float: left;
+    width: 40%;
     border-radius: 7px 0px 0px 7px;
   }
 
 
   .details {
-    width: 40%;
-    padding-left: 10rem;
-    margin-top: 1em;
+    width: 55%;
+    float: right;
   }
 
   .stars-1 {
@@ -742,15 +756,22 @@ footer div ul li {
     margin: 0 auto;
   }
 
+  .article-1 figure img {
+    width: 40%;
+    border-radius: 7px 0px 0px 7px;
+  }
+
+
+  .details {
+    width: 55%;
+    float: right;
+  }
+
 
   .plus_populaires img {
     height: 10em;
   }
 
-  .details {
-    margin-top: 1.3em;
-    font-size: clamp(.55em, .77em, 2em);
-  }
 
 
   section {
@@ -824,6 +845,11 @@ footer div ul li {
 
   header nav a {
     color: #0065fc;
+    border-top: none;
+  }
+
+  #sinscrire{
+    border-top: none;
   }
 
 }
@@ -844,27 +870,31 @@ footer div ul li {
     padding: 2em 2em;
   }
 
-
   header nav {
     display: flex;
     grid-area: navbar;
     align-items: center;
+    justify-content: space-around;
+    padding: 0em 0em;
   }
 
   header nav a {
-    width: 50%;
     text-decoration-line: none;
     color: black;
     font-size: 1.13em;
+    justify-self: center;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
   }
 
   header nav a:hover {
-    border-bottom: 3.7px solid #0065fc;
+    border-bottom: 3px solid #0065fc;
     color: #0065fc;
   }
 
-  .navbar {
-    padding: .5em;
+  .navbar{
+    flex: 50%;
+    width: 100%;
     text-align: center;
   }
 
@@ -875,6 +905,7 @@ footer div ul li {
     color: #0065fc;
     font-weight: bolder;
     text-decoration-line: none;
+    border-top: none;
   }
 
   form button {
@@ -883,7 +914,7 @@ footer div ul li {
 
 }
 
-@media all and (max-width: 480px) {
+@media screen and (min-width: 200px) and (max-width: 480px) {
   header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
@@ -901,22 +932,27 @@ footer div ul li {
     display: flex;
     grid-area: navbar;
     align-items: center;
+    justify-content: space-around;
+    padding: 0em 0em;
   }
 
   header nav a {
-    width: 50%;
     text-decoration-line: none;
     color: black;
     font-size: 1.13em;
+    justify-self: center;
+    border-bottom: 3px solid #f2f2f2;
+    border-top: none;
   }
 
   header nav a:hover {
-    border-bottom: 3.7px solid #0065fc;
+    border-bottom: 3px solid #0065fc;
     color: #0065fc;
   }
 
-  .navbar {
-    padding: .5em;
+  .navbar{
+    flex: 50%;
+    width: 100%;
     text-align: center;
   }
 
@@ -927,9 +963,22 @@ footer div ul li {
     color: #0065fc;
     font-weight: bolder;
     text-decoration-line: none;
+    border-top: none;
   }
 
   form button {
     display: none;
   }
+
+  .article-1 figure img {
+    width: 40%;
+    border-radius: 7px 0px 0px 7px;
+  }
+
+
+  .details {
+    width: 55%;
+    float: right;
+  }
+
 }
